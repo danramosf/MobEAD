@@ -9,7 +9,7 @@ pipeline {
         stage('Lint Dockerfile'){ 
             steps{
                 echo "Pipeline Usando Jenkinsfile"
-                sh 'docker run --rm -i hadolint/hadolint < Dockerfile'
+                docker run --rm -i hadolint/hadolint < Dockerfile
             }
         }
         stage('Build image') {
