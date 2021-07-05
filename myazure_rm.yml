@@ -1,0 +1,8 @@
+plugin: azure_rm
+include_vm_resource_groups:
+- Unyleya-RG
+auth_source: msi
+
+keyed_groups:
+- prefix: tag
+  key: tags
